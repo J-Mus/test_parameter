@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+  <link
+    rel = "stylesheet"
+    href = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity = "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin = ""/>
+  <script
+    src = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity = "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin = ""></script>
+
+  <style>
+    #mapid { height: 960px; }
+  </style>
+
+</head>
+<body>
+    <div id = "mapid"></div>
+    <script>
+        var mymap = L.map('mapid').setView([51.448, -2.609], 13);    // add latitude and longitude here
+        const attribution =  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        const tiles = L.tileLayer(tileUrl, { attribution });
+        tiles.addTo(mymap);
+        //L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token = {accessToken}', {
+        //  L.tileLayer('https://api.mapbox.com/styles/j-mus/ckt1wycqu1fkd17r8nju5o07n/{id}/tiles/{z}/{x}/{y}/j-mus?access_token = {accessToken}',{
+        //    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        //    maxZoom: 18,
+            //id: 'mapbox.streets-v11',
+        //    id: 'mapbox.satellite',
+            //mapbox://styles/
+            //id: mapbox/satellite-v9
+        //    z: 1,
+        //    x: 1,
+        //    y: 0,
+        //    tileSize: 512,
+        //    zoomOffset: -1,
+        //    accessToken: 'pk.eyJ1Ijoiai1tdXMiLCJhIjoiY2t0MXdpanpmMGVuczJvcGdlbGZpaTBhbyJ9.wBjSol1yLwWKVNg8SbA4dA'
+        //    }).addTo(mymap);
+        var marker1 = L.marker([51.446752,-2.599197]).addTo(mymap);   
+        marker1.bindPopup(" <b>Gaol Ferry Steps (59 dB Laeq,1min) </b><br>  <img src=https://raw.githubusercontent.com/J-Mus/test/main/gaol%20ferry%20steps%20looking%20south.jpg style=width:600px;> <img src=https://raw.githubusercontent.com/J-Mus/test/main/gaol%20ferry%20steps%20looking%20north_IMG_0422.jpg style=width:600px;> <audio controls style=width:1200px; src=https://github.com/J-Mus/test/raw/main/spike%20island_gaol%20ferry%20steps.wav type=audio/mpeg> </audio> <table><tr style=vertical-align:top;><td style=vertical-align:top;>  <b>Sound categorisation example question:</b> <br> <br> To what extent (1 not at all -to- 5 complete domination) do you hear: <br> - traffic sound? <br> - construction/industrial sound? <br> - human sounds? <br> - natural sounds? style=vertical-align:top </td><td> <b>Sound perception example questions:</b> <br> <br> To what extent do you (1 strongly agree -to- 5 strongly disagree) the current acoustic environment is: <br> - pleasant? <br> - chaotic? <br> - vibrant? <br> - uneventful? <br> - calm? <br> - annoying? <br> - eventful? <br> - monotonous? </td><td> <br> <br> To what extent is the current acoustic environment appropriate to the present place? <br> - not at all <br> - slightly <br> - moderately <br> - very <br> - perfectly </td></tr></table>" , { maxWidth : 1220})
+      
+        var marker2 = L.marker([51.446372,-2.598091]).addTo(mymap);    
+        marker2.bindPopup(" <b>The Gateway (52 dB Laeq,1min)</b><br>  <img src=https://raw.githubusercontent.com/J-Mus/test/main/the%20gateway%20looking%20north.jpg style=width:600px;> <img src=https://raw.githubusercontent.com/J-Mus/test/main/the%20gateway%20looking%20south.jpg style=width:600px;> <audio controls style=width:1200px; src=https://github.com/J-Mus/test/raw/main/spike%20island_the%20gateway.wav type=audio/mpeg>  </audio> <table><tr style=vertical-align:top;><td style=vertical-align:top;>  <b>Sound categorisation example question:</b> <br> <br> To what extent (1 not at all -to- 5 complete domination) do you hear: <br> - traffic sound? <br> - construction/industrial sound? <br> - human sounds? <br> - natural sounds? style=vertical-align:top </td><td> <b>Sound perception example questions:</b> <br> <br> To what extent do you (1 strongly agree -to- 5 strongly disagree) the current acoustic environment is: <br> - pleasant? <br> - chaotic? <br> - vibrant? <br> - uneventful? <br> - calm? <br> - annoying? <br> - eventful? <br> - monotonous? </td><td> <br> <br> To what extent is the current acoustic environment appropriate to the present place? <br> - not at all <br> - slightly <br> - moderately <br> - very <br> - perfectly </td></tr></table>", { maxWidth : 1220})
+
+ // some useful stuff:
+      // https://stackoverflow.com/questions/38007658/leaflet-popup-width
+      // https://www.w3schools.com/css/css_table_align.asp
+     
+
+    </script>
+
+</body>
+</html>
