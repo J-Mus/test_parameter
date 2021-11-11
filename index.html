@@ -48,6 +48,16 @@
         var marker2 = L.marker([51.446372,-2.598091]).addTo(mymap);    
         marker2.bindPopup(" <b>The Gateway (52 dB Laeq,1min)</b><br>  <img src=https://raw.githubusercontent.com/J-Mus/test/main/the%20gateway%20looking%20north.jpg style=width:600px;> <img src=https://raw.githubusercontent.com/J-Mus/test/main/the%20gateway%20looking%20south.jpg style=width:600px;> <audio controls style=width:1200px; src=https://github.com/J-Mus/test/raw/main/spike%20island_the%20gateway.wav type=audio/mpeg>  </audio> <table><tr style=vertical-align:top;><td style=vertical-align:top;>  <b>Sound categorisation example question:</b> <br> <br> To what extent (1 not at all -to- 5 complete domination) do you hear: <br> - traffic sound? <br> - construction/industrial sound? <br> - human sounds? <br> - natural sounds? style=vertical-align:top </td><td> <b>Sound perception example questions:</b> <br> <br> To what extent do you (1 strongly agree -to- 5 strongly disagree) the current acoustic environment is: <br> - pleasant? <br> - chaotic? <br> - vibrant? <br> - uneventful? <br> - calm? <br> - annoying? <br> - eventful? <br> - monotonous? </td><td> <br> <br> To what extent is the current acoustic environment appropriate to the present place? <br> - not at all <br> - slightly <br> - moderately <br> - very <br> - perfectly </td></tr></table>", { maxWidth : 1220})
 
+        var polygon_gaol_west = L.polygon([
+            [51.446965, -2.599664],
+            [51.447019, -2.599433],
+            [51.446787, -2.599284],
+            [51.446269, -2.599454],
+            [51.446290, -2.599702],
+            [51.446778, -2.599544]
+          
+          ]).addTo(mymap);
+      
  // some useful stuff:
       // https://stackoverflow.com/questions/38007658/leaflet-popup-width
       // https://www.w3schools.com/css/css_table_align.asp
