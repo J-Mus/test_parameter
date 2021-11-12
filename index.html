@@ -96,10 +96,10 @@
             [51.44641,-2.59813],
             [51.44640,-2.59819],
             [51.44627,-2.59816],
-          [51.44622,-2.59870],
-           [51.44672,-2.59883],
-          [51.44673,-2.59875],
-          [51.44677,-2.59876]
+            [51.44622,-2.59870],
+            [51.44672,-2.59883],
+            [51.44673,-2.59875],
+            [51.44677,-2.59876]
 
             ]);
             polygon_gateway_hope_quay.setStyle({
@@ -108,6 +108,23 @@
             polygon_gateway_hope_quay.bindPopup("Residential + Private Amenity Area").addTo(mymap);
       
         // parameter - resi + private amenity - the gateway - abel yard (make this blue)
+         var polygon_gateway_abel_yard = L.polygon([
+            [51.44692,-2.59815],
+            [51.44703,-2.59754],            
+            [51.44673,-2.59747],
+            [51.44674,-2.59739],
+            [51.44639,-2.59731],
+            [51.44637,-2.59736],
+            [51.44635,-2.59737],
+            [51.44629,-2.59792],
+            [51.44643,-2.59796],
+            [51.44642,-2.59802]
+
+            ]);
+            polygon_gateway_abel_yard.setStyle({
+            color: 'blue'
+            });
+            polygon_gateway_abel_yard.bindPopup("Residential + Private Amenity Area").addTo(mymap);
       
  // some useful stuff:
       // https://stackoverflow.com/questions/38007658/leaflet-popup-width
