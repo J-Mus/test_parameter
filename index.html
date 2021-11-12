@@ -76,7 +76,18 @@
             });
             polygon_gaol_east.bindPopup("Mixed use (GF Commercial, UF Residential)").addTo(mymap);
       
-      // parameter - mixed use - gf commercial, upper floors resi - the gateway north
+        // parameter - mixed use - gf commercial, upper floors resi - the gateway north
+        var polygon_gateway_north = L.polygon([
+            [51.446785, -2.598812],
+            [51.446893, -2.598257],
+            [51.446859, -2.598251],
+            [51.446775, -2.598811]
+
+            ]);
+            polygon_gateway_north.setStyle({
+            color: 'orange'
+            });
+            polygon_gateway_north.bindPopup("Mixed use (GF Commercial, UF Residential)").addTo(mymap);
       
       // parameter - resi- the gateway (make this blue)
       
