@@ -89,7 +89,22 @@
             });
             polygon_gateway_north.bindPopup("Mixed use (GF Commercial, UF Residential)").addTo(mymap);
       
-      // parameter - resi- the gateway (make this blue)
+        // parameter - resi + private amenity - the gateway - hope quay (make this blue)
+        var polygon_gateway_hope_quay = L.polygon([
+            [51.446775, -2.598811],
+            [51.446859, -2.598251],            
+            [51.446455, -2.598127],
+            [51.446433, -2.598230],
+            [51.446328, -2.598163],
+          [51.446259, -2.598701]
+
+            ]);
+            polygon_gateway_hope_quay.setStyle({
+            color: 'blue'
+            });
+            polygon_gateway_hope_quay.bindPopup("Mixed use (GF Commercial, UF Residential)").addTo(mymap);
+      
+        // parameter - resi + private amenity - the gateway - abel yard (make this blue)
       
  // some useful stuff:
       // https://stackoverflow.com/questions/38007658/leaflet-popup-width
